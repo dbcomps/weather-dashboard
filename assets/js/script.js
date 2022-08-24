@@ -20,36 +20,39 @@ var formSubmitHandler = function(event) {
 		alert("Please enter a city name");
 	}
 	console.log(cityname);
-	console.log(citySearchTerm.textContent)
-	citySearchTerm.textContent = cityname;
-	
 };
 
 var getCityWeatherData = function(cityname) {
-	
+	// format the openweather api url
 	var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&APPID=e3e03c31e123f88451ad6f252c161273";
 
-	console.log(apiUrl);
+	// make a request to the url
 	fetch(apiUrl).then(function(response) {
 		// request was successful
 		if (response.ok) {
 			response.json().then(function(data) {
 			displayWeatherData(data, cityname);
-				
-				console.log(data, cityname)
-			})
+			});
+		} else {
+			alert("Error: City Not Found");
 		}
-	})
-
-}
+	}).catch(function(error) {
+		alert("Unable to connect to OpenWeather");
+	});
+};
 
 var displayWeatherData = function(weatherData, searchTerm) {
 	// check if api returned any data
 	if(weatherData.length === 0) {
-		weatherContainerEl.textContent = "No city found.";
+		weatherContainerEl.textContent = "No weather found.";
 		return;
 	}
 	
+	// clear old content
+	weatherContainerEl.textContent = "";
+	citySearchTerm.textContent = searchTerm;
+	
+	// Get one set of data to display to start
 	
 	
 }
