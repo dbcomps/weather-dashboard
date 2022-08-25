@@ -1,7 +1,7 @@
 # Weather Dashboard
 
 ## Purpose
-See weather outlook for multiple cities
+Enter a city and see weather 4 day weather forcast
 
 ## Built with
 * HTML
@@ -13,3 +13,5 @@ https://dbcomps.github.io/weather-dashboard/
 
 ## Contributions
 Made by David
+
+![<# alt text #>](assets/images/ScreenShot.png "Screenshot")
