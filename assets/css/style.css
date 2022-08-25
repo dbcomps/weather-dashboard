@@ -98,7 +98,6 @@ p {
   color: var(--primary);
 }
 
-
 .app-title {
   font-size: 3rem;
   background-color: var(--primary);
@@ -107,6 +106,13 @@ p {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
+}
+
+.subtitle {
+	color: var(--primary;);
+	font-size: 2rem;
+	justify-content: right;
+	align-items: right;
 }
 
 .list-group {
