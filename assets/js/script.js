@@ -65,7 +65,7 @@ var displayWeatherData = function(weatherData, searchTerm) {
 	
 	// clear old content
 	//weatherContainerEl.textContent = "";
-	citySearchTerm.textContent = "5-Day Forecast for " + searchTerm;
+	citySearchTerm.textContent = "4-Day Forecast for " + searchTerm;
 	
 	// Get first day set of data to display
 	var weather1Temp = weatherData.list[1].main.temp;
