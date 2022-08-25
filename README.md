@@ -1,7 +1,7 @@
 # Weather Dashboard
 
 ## Purpose
-Enter a city and see weather 4 day weather forcast
+Enter a city and see 4 day weather forecast
 
 ## Built with
 * HTML
